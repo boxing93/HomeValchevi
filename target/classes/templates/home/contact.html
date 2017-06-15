@@ -1,0 +1,70 @@
+<main>
+    <!-- Contact -->
+    <div class="contact agileits w3layouts">
+        <div class="container">
+
+            <h2 class="wow agileits w3layouts slideInLeft">КОНТАКТИ</h2>
+            <p class="contact-p wow agileits w3layouts slideInLeft">Свържете се с нас, ако имате въпроси!</p>
+
+            <div class="contact-grids agileits w3layouts">
+
+                <div class="col-md-6 col-sm-6 agileits w3layouts contact-grid contact-grid-1">
+                    <div class="address wow agileits w3layouts slideInLeft">
+                        <h4>Адрес</h4>
+                        <address>
+                            <ul>
+                                <li><span class="glyphicon agileits w3layouts glyphicon-map-marker"
+                                          aria-hidden="true"></span>Китен
+                                </li>
+                                <li><span class="glyphicon agileits w3layouts glyphicon-map-marker"
+                                          aria-hidden="true"></span>8183
+                                </li>
+                                <li><span class="glyphicon agileits w3layouts glyphicon-map-marker"
+                                          aria-hidden="true"></span>улица "Атлиман" 3
+                                </li>
+                                <li><span class="glyphicon agileits w3layouts glyphicon-map-marker"
+                                          aria-hidden="true"></span>България
+                                </li>
+                            </ul>
+                        </address>
+                    </div>
+                    <div class="phone wow agileits w3layouts slideInLeft">
+                        <h4>Телефон</h4>
+                        <p><span class="glyphicon agileits w3layouts glyphicon-earphone" aria-hidden="true"></span>+359(0)
+                            889 68 90 74</p>
+                    </div>
+                    <div class="email wow agileits w3layouts slideInLeft">
+                        <h4>Email</h4>
+                        <p><span class="glyphicon agileits w3layouts glyphicon-envelope" aria-hidden="true"></span> <a
+                                href="mailto:radka.kiten@gmail.com">radka.kiten@gmail.com</a></p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="col-md-6 col-sm-6 agileits w3layouts contact-grid contact-grid-2 wow slideInLeft">
+                    <form th:action="@{/contact}" method="post">
+                        <h3 class="alert-success" th:text="${message}"></h3>
+                        <h3 class="alert-warning" th:text="${message2}"></h3>
+                        <h3 class="alert-warning" th:text="${message3}"></h3>
+                        <input type="text" class="text wow agileits w3layouts slideInLeft" name="name" placeholder="Име"
+                               required=""/>
+                        <input type="text" class="text wow agileits w3layouts slideInLeft" name="email"
+                               placeholder="Email" required=""/>
+                        <textarea name="message" class="text wow agileits w3layouts slideInLeft" placeholder="Съобщение"
+                                  required=""></textarea>
+                        <input type="submit" class="more_btn wow agileits w3layouts slideInLeft" value="Изпрати"/>
+                    </form>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="col-lg-12">
+                <iframe th:src="@{https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1476.9916473951873!2d27.772486022635555!3d42.236169868225005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a6d2b40b9f7dcf%3A0x24f1f87e38097f01!2z0YPQuy4g4oCe0JDRgtC70LjQvNCw0L3igJwsIDgxODMg0JrQuNGC0LXQvSwg0JHRitC70LPQsNGA0LjRjw!5e0!3m2!1sbg!2sbg!4v1497264232030}"
+                        width="100%" height="auto" frameborder="0" style="border:0">
+                </iframe>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- //Contact -->
+</main>
