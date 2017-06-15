@@ -1,0 +1,80 @@
+<main>
+    <!-- Booking -->
+    <div class="reg agileits w3layouts">
+        <div class="container">
+            <div class="register agileits w3layouts">
+
+                <form class="form-horizontal" th:action="@{/booking}" method="post">
+                    <fieldset>
+                        <legend class="text-center">РЕЗЕРВАЦИЯ</legend>
+                        <h3 class="alert-success" th:text="${message}"></h3>
+                        <h3 class="alert-warning" th:text="${message2}"></h3>
+                        <h3 class="alert-warning" th:text="${message3}"></h3>
+                        <div class="place wow  agileits text-center w3layouts slideInLeft">
+                            <label class="col-sm-4 control-label">Брой Стаи</label>
+                            <div class="dropdown-button agileits w3layouts">
+                                <select class="dropdown agileits w3layouts" name="number" tabindex="10"
+                                        data-settings='{"wrapperClass":"flat"}'>
+                                    <option th:value="0">Изберете Брой Стаи</option>
+                                    <option th:value="1">1</option>
+                                    <option th:value="2">2</option>
+                                    <option th:value="3">3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="place wow  agileits text-center w3layouts slideInLeft">
+                            <label class="col-sm-4 control-label">Вид Стаи</label>
+                            <div class="dropdown-button agileits w3layouts">
+                                <select class="dropdown agileits w3layouts" name="room" tabindex="10"
+                                        data-settings='{"wrapperClass":"flat"}'>
+                                    <option th:value="0">Изберете Вид Стая</option>
+                                    <option th:value="1">Двойна Стая</option>
+                                    <option th:value="2">Тройна Стая</option>
+                                    <option th:value="3">Студио</option>
+                                    <option th:value="4">Двойна Стая + Студио</option>
+                                    <option th:value="5">Тройна Стая + Студио</option>
+                                    <option th:value="6">Двойна + Тройна Стая</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="place wow  agileits text-center w3layouts slideInLeft">
+                            <label class="col-sm-4 control-label">Телефон</label>
+                            <div class="dropdown-button agileits w3layouts">
+                                <input type="number" id="weight" name="phone" placeholder="Телефон"
+                                       class="form-control"/>
+                            </div>
+                        </div>
+                        <div class="place wow  agileits text-center w3layouts slideInLeft">
+                            <label class="col-sm-4 control-label">Емайл</label>
+                            <div class="dropdown-button agileits w3layouts">
+                                <input class="form-control" name="email" type="email"
+                                       placeholder="Емайл"
+                                       onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}"
+                                       required=""/>
+                            </div>
+                        </div>
+                        <div class="place wow  agileits text-center w3layouts slideInLeft">
+                            <label class="col-sm-4 control-label">Пристигане</label>
+                            <div class="dropdown-button agileits w3layouts">
+                                <input class="form-control" id="datepicker1" name="arrivalDate" type="date"
+                                       placeholder="Дата на пристигане"
+                                       onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}"
+                                       required=""/>
+                            </div>
+                        </div>
+                        <div class="place wow  agileits text-center w3layouts slideInLeft">
+                            <label class="col-sm-4 control-label">Заминаване</label>
+                            <div class="dropdown-button agileits w3layouts">
+                                <input class="form-control" id="datepicker2" name="departureDate" type="date"
+                                       placeholder="Дата на заминаване"
+                                       onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}"
+                                       required=""/>
+                            </div>
+                        </div>
+                        <input type="submit" class="btn btn-success slideInLeft"  value="РЕЗЕРВИРАЙ"/>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>

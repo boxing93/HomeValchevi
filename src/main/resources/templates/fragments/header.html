@@ -1,0 +1,77 @@
+<header th:fragment="header">
+<div class="header agileits w3layouts" id="home">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-default w3l aits wow bounceInUp agileits w3layouts">
+        <div class="container">
+
+            <div class="navbar-header agileits w3layouts">
+                <button type="button" class="navbar-toggle agileits w3layouts collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                    <span class="sr-only agileits w3layouts">Toggle navigation</span>
+                    <span class="icon-bar w3l"></span>
+                    <span class="icon-bar aits"></span>
+                    <span class="icon-bar w3laits"></span>
+                </button>
+                <a class="navbar-brand agileits w3layouts" th:href="@{/}">КЪЩА ВЪЛЧЕВИ</a>
+            </div>
+
+            <div id="navbar" class="navbar-collapse agileits w3layouts navbar-right collapse">
+                <ul class="nav agileits w3layouts navbar-nav">
+                    <li><a th:href="@{/}">НАЧАЛО</a></li>
+                    <li><a th:href="@{/about}">ЗА НАС</a></li>
+                    <li><a th:href="@{/gallery}">ГАЛЕРИЯ</a></li>
+                    <li><a th:href="@{/booking}">РЕЗЕРВАЦИЯ</a></li>
+                    <li><a th:href="@{/contact}">КОНТАКТИ</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <!-- //Navbar -->
+
+
+
+    <!-- Slider1 -->
+    <div class="slider agileits w3layouts">
+        <div class="slider-1 agileits w3layouts">
+            <ul class="rslides agileits w3layouts" id="slider1">
+                <li>
+                    <img src="images/slide-1.jpg" alt="Agileits W3layouts"/>
+                    <div class="layer agileits w3layouts"></div>
+                    <div class="caption agileits w3layouts">
+                        <h3>Добре дошли в<span>СЕМЕЙНА КЪЩА "ВЪЛЧЕВИ"</span></h3>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/slide-2.jpg" alt="Agileits W3layouts"/>
+                    <div class="caption agileits w3layouts">
+                        <h3>...и добре дошли в Китен!</h3>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/slide-3.jpg" alt="Agileits W3layouts"/>
+                    <div class="caption agileits w3layouts">
+                        <h3>Докоснете се до нашите плажове..</h3>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/slide-4.jpg" alt="Agileits W3layouts"/>
+                    <div class="caption agileits w3layouts">
+                        <h3>и прекарайте незабравими моменти!</h3>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/slide-5.jpg" alt="Agileits W3layouts"/>
+                    <div class="layer agileits w3layouts"></div>
+                    <div class="caption agileits w3layouts">
+                        <h3>Очакваме Ви!</h3>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- //Slider1 -->
+    <div class="clearfix"></div>
+
+</div>
+</header>

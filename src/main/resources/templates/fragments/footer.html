@@ -1,0 +1,42 @@
+<footer th:fragment="footer">
+<div class="footer agileits w3layouts">
+    <div class="container">
+
+        <div class="col-md-6 col-sm-6 agileits w3layouts footer-grids">
+            <div class="col-md-4 col-sm-4 footer-grid agileits w3layouts footer-grid-3 wow fadeInUp">
+                <ul class="navbar">
+                    <li class="agileits w3layouts"><a th:href="@{/about}"><strong>ЗА НАС</strong></a></li>
+                    <li class="agileits w3layouts"><a th:href="@{/gallery}"><strong>ГАЛЕРИЯ</strong></a></li>
+                    <li class="agileits w3layouts"><a th:href="@{/booking}"><strong>РЕЗЕРВАЦИЯ</strong></a></li>
+                    <li class="agileits w3layouts"><a th:href="@{/contact}"><strong>КОНТАКТИ</strong></a></li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="col-md-6 col-sm-6 footer-grids agileits w3layouts newsletter wow fadeInUp">
+            <h4>Останете на линия..</h4>
+            <p>Напишете вашия e-mail, ако желаете да получавате съобщения от нас!</p>
+            <form th:action="@{/subscribe}" method="post">
+                <h3 class="alert-success" th:text="${messagesub}"></h3>
+                <h3 class="alert-warning" th:text="${messagesub2}"></h3>
+                <input type="text" placeholder="Email" name="email" required=""/>
+                <input type="submit" value="АБОНИРАНЕ"/>
+            </form>
+        </div>
+
+        <div class="col-md-6 col-sm-6 footer-grids agileits w3layouts social wow fadeInUp">
+            <ul class="social-icons">
+                <li class="agileits w3layouts"><a th:href="@{https://www.facebook.com/%D0%A1%D0%B5%D0%BC%D0%B5%D0%B9%D0%BD%D0%B0-%D0%BA%D1%8A%D1%89%D0%B0-%D0%92%D1%8A%D0%BB%D1%87%D0%B5%D0%B2%D0%B8-285100634996374/?fref=ts}" class="facebook agileits w3layouts" title="Go to Our Facebook Page"></a></li>
+                <li class="agileits w3layouts"><a href="#" class="instagram agileits w3layouts" title="Go to Our Instagram Account"></a></li>
+            </ul>
+        </div>
+        <div class="col-md-6 col-sm-6 footer-grids agileits w3layouts copyright wow fadeInUp">
+            <p>&copy; 2017 Семейна къща "Вълчеви". Всички права запазени!</p>
+        </div>
+        <div class="clearfix"></div>
+
+    </div>
+</div>
+
+</footer>
